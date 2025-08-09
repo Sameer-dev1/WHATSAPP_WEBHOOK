@@ -23,7 +23,7 @@ export default function ChatWindow({ waId, meta }) {
   const loadMessages = async () => {
     setLoading(true);
     try {
-      const res = await axios.get(`http://localhost:5000/messages/${waId}`);
+      const res = await axios.get(`https://whatsapp-webhook-ftom.onrender.com/messages/${waId}`);
       // Ensure messages are sorted by timestamp (oldest first, newest last)
       const sortedMessages = (res.data || []).sort((a, b) => a.timestamp - b.timestamp);
       setMessages(sortedMessages);
@@ -67,7 +67,7 @@ export default function ChatWindow({ waId, meta }) {
 
     try {
       // Save to backend
-      const response = await axios.post("http://localhost:5000/send_message", {
+      const response = await axios.post("https://whatsapp-webhook-ftom.onrender.com/send_message", {
         wa_id: waId,
         text: messageText,
         timestamp: currentTimestamp,

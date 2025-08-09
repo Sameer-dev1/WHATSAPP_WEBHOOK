@@ -51,7 +51,7 @@ pip install -r requirements.txt
 python app.py
 ```
 
-The backend will start on `http://localhost:5000`
+The backend will start on `https://whatsapp-webhook-ftom.onrender.com`
 
 ### 3. Frontend Setup
 
@@ -92,7 +92,7 @@ Edit `webhook_Backend/config.py` to configure:
 
 The frontend connects to the backend API. Update the API base URL in the components if needed:
 
-- Default: `http://localhost:5000`
+- Default: `https://whatsapp-webhook-ftom.onrender.com`
 - Update in `ConversationsList.jsx` and `ChatWindow.jsx`
 
 ## 📡 API Endpoints

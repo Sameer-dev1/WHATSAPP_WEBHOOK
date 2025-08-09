@@ -106,7 +106,7 @@ src/
 ### API Configuration
 The frontend connects to the backend API. Update the API base URL in the components if needed:
 
-- Default: `http://localhost:5000`
+- Default: `https://whatsapp-webhook-ftom.onrender.com`
 - Update in `ConversationsList.jsx` and `ChatWindow.jsx`
 
 

@@ -18,7 +18,7 @@ export default function ConversationsList({ onSelect }) {
   const fetchConversations = async () => {
     setLoading(true);
     try {
-      const res = await axios.get("http://localhost:5000/conversations");
+      const res = await axios.get("https://whatsapp-webhook-ftom.onrender.com/conversations");
       // normalize structure for UI safety
       const list = (res.data || []).map(c => ({
         wa_id: c._id,
